@@ -1,0 +1,56 @@
+.banner {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  min-height: 500px;
+  background: var(--color-bg-primary);
+  color: var(--color-default-inverted);
+}
+
+.banner_wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+}
+
+.banner_inner {
+  text-align: center;
+}
+
+.banner_logo {
+  position: relative;
+  width: 111px;
+  height: 100px;
+  margin-top: -30px;
+  animation: fadeIn ease 2s;
+}
+
+.banner_heading {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: $font-light;
+  margin-top: 50px;
+  opacity: 0;
+  animation: 1s 0.5s forwards fadeIn;
+
+  strong {
+    font-weight: $font-bold;
+  }
+}
+
+.banner_baseline {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: $font-light;
+  opacity: 0;
+  animation: 1s 1s forwards fadeIn;
+
+  strong {
+    font-weight: $font-bold;
+  }
+}

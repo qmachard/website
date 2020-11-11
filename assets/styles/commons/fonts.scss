@@ -1,0 +1,6 @@
+@import 'variables';
+@import 'mixins';
+
+@include font-face($font-helvetica, 'HelveticaNeue-Roman', $font-normal);
+@include font-face($font-helvetica, 'HelveticaNeue-Light', $font-light);
+@include font-face($font-helvetica, 'HelveticaNeueBold', $font-bold);

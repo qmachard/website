@@ -69,6 +69,22 @@ Encore
   // uncomment if you use API Platform Admin (composer require api-admin)
   //.enableReactPreset()
   //.addEntry('admin', './assets/admin.js')
+
+  .addLoader({
+    test: /\.(woff|woff2|eot|ttf|otf)$/,
+    use: [
+      {
+        loader: 'file-loader',
+        options: {
+          outputPath: 'fonts'
+        }
+      }
+    ]
+  })
+
+  .configureFilenames({
+    fonts: 'fonts/[name].[ext]'
+  })
 ;
 
 module.exports = Encore.getWebpackConfig();
