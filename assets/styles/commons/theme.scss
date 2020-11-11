@@ -17,4 +17,9 @@ body {
   font-size: 14px;
   line-height: 1.5;
   background: var(--color-bg-default);
+
+  animation: hide-scroll 3s backwards;
+  @keyframes hide-scroll {
+    from, to { overflow: hidden; }
+  }
 }

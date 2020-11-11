@@ -2,3 +2,13 @@
   0% { opacity:0; }
   100% { opacity:1; }
 }
+
+@keyframes screwUp {
+  0% { height: 100vh }
+  100% { height: calc(60vh + 200px) }
+}
+
+@keyframes moveUp {
+  0% { top: calc(100vh + 200px); }
+  100% { top: calc(60vh + 200px); }
+}

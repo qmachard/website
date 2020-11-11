@@ -6,7 +6,7 @@
     "webpack-notifier": "^1.6.0"
   },
   "scripts": {
-    "start": "encore dev-server",
+    "start": "encore dev-server --disable-host-check --host 0.0.0.0",
     "dev": "encore dev"
   }
 }
