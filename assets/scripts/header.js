@@ -3,11 +3,20 @@ const Header = () => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         const id = entry.target.getAttribute('id');
+        const item = document.querySelector(`.nav_link[href="#${id}"]`)
+
         if (entry.intersectionRatio > 0) {
-          document.querySelectorAll('.nav_link--active').forEach(item => item.classList.remove('nav_link--active'));
-          document.querySelector(`.nav_link[href="#${id}"]`).classList.add('nav_link--active');
+          document.querySelectorAll('.nav_link--active')
+            .forEach(item => {
+              item.classList.remove('nav_link--active');
+              item.removeAttribute('aria-current');
+            });
+
+          item.classList.add('nav_link--active');
+          item.setAttribute('aria-current', 'page');
         } else {
-          document.querySelector(`.nav_link[href="#${id}"]`).classList.remove('nav_link--active');
+          item.classList.remove('nav_link--active');
+          item.removeAttribute('aria-current');
         }
       });
     }, {
