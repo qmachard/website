@@ -28,7 +28,13 @@
 }
 
 .section {
+  display: block;
+  position: relative;
   padding-bottom: 200px;
+
+  &--secondary {
+    background: var(--color-bg-secondary);
+  }
 }
 
 .section_wave {

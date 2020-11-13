@@ -1,11 +1,7 @@
 @import '../commons/variables';
 @import '../commons/mixins';
 
-.services {
-  display: block;
-  position: relative;
-  background: var(--color-bg-secondary);
-}
+.services {}
 
 .services_row {
   margin-top: 50px;
