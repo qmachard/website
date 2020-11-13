@@ -7,6 +7,7 @@
   },
   "scripts": {
     "start": "encore dev-server --disable-host-check --host 0.0.0.0",
-    "dev": "encore dev"
+    "dev": "encore dev",
+    "build": "encore production"
   }
 }
