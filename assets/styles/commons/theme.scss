@@ -7,6 +7,8 @@
   --color-default: #{$color-default};
   --color-default-inverted: #{$color-default-inverted};
   --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
+  --color-tertiary: #{$color-tertiary};
   --color-bg-default: #{$color-bg-default};
   --color-bg-primary: #{$color-primary};
   --color-bg-secondary: #{$color-bg-secondary};
@@ -19,7 +21,23 @@ body {
   background: var(--color-bg-default);
 
   animation: hide-scroll 3s backwards;
-  @keyframes hide-scroll {
-    from, to { overflow: hidden; }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--small {
+    max-width: 640px;
   }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

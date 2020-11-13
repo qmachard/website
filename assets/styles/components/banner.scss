@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh + 200px);
   align-items: center;
   justify-content: center;
   background: var(--color-bg-primary);
@@ -19,6 +19,7 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: $font-light;
+  margin-top: -200px;
 
   strong {
     font-weight: $font-bold;
@@ -27,7 +28,6 @@
 
 .banner_logo {
   position: relative;
-  margin-top: -30px;
   animation: fadeIn ease 2s;
   width: 70px;
 

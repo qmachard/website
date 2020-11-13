@@ -1,0 +1,66 @@
+@import '../commons/variables';
+@import '../commons/mixins';
+
+.title-1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: $font-light;
+  color: var(--color-primary);
+
+  b {
+    font-weight: $font-bold;
+  }
+
+  @include desktop {
+    font-size: 50px;
+  }
+}
+
+.title-2 {
+  font-size: 24px;
+  font-weight: $font-light;
+  color: var(--color-secondary);
+
+  b, strong {
+    font-weight: $font-bold;
+  }
+
+  @include desktop {
+    font-size: 35px;
+  }
+}
+
+.title-3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: $font-light;
+  color: var(--color-secondary);
+
+  b {
+    font-weight: $font-bold;
+  }
+
+  @include desktop {
+    font-size: 24px;
+  }
+}
+
+.paragraph {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: $font-light;
+
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: $font-bold;
+  }
+
+  @include desktop {
+    font-size: 22px;
+  }
+}

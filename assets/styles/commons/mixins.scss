@@ -31,3 +31,9 @@
     @content;
   }
 }
+
+@mixin tablet-portrait {
+  @media screen and (min-width: 425px) {
+    @content;
+  }
+}

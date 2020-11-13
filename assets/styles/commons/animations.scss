@@ -4,11 +4,20 @@
 }
 
 @keyframes screwUp {
-  0% { height: 100vh }
+  0% { height: calc(100vh + 200px) }
   100% { height: calc(60vh + 200px) }
 }
 
 @keyframes moveUp {
   0% { top: calc(100vh + 200px); }
   100% { top: calc(60vh + 200px); }
+}
+
+@keyframes hide-scroll {
+  from, to { overflow: hidden; }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
