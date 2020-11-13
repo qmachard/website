@@ -1,3 +1,6 @@
+@import '../commons/variables';
+@import '../commons/mixins';
+
 .main {
   display: block;
   position: relative;
@@ -5,15 +8,6 @@
   background: var(--color-bg-default);
   animation: 2s 1.5s moveUp forwards;
   z-index: 2;
-}
-
-.main_wave {
-  display: block;
-  position: absolute;
-  top: -199px;
-  left: 0;
-  width: 100%;
-  min-height: 200px;
 }
 
 .main_sticky {
@@ -27,7 +21,17 @@
   z-index: 2;
 }
 
-.section {
+.main_footer {
+  padding-bottom: 50px;
+  text-align: center;
+
+  .paragraph {
+    font-size: 15px;
+    font-weight: $font-light;
+  }
+}
+
+.main_section {
   display: block;
   position: relative;
   padding-bottom: 200px;
@@ -41,7 +45,7 @@
   }
 }
 
-.section_wave {
+.main_wave {
   display: block;
   position: absolute;
   top: -200px;
@@ -51,7 +55,7 @@
   fill: var(--color-bg-default);
   animation-play-state: paused;
 
-  .section--secondary & {
+  .main_section--secondary & {
     fill: var(--color-bg-secondary);
   }
 }
