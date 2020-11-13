@@ -47,6 +47,17 @@
   }
 }
 
+.title-4 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: $font-light;
+  color: var(--color-secondary);
+
+  @include desktop {
+    font-size: 24px;
+  }
+}
+
 .paragraph {
   margin-top: 20px;
   font-size: 18px;
