@@ -42,6 +42,7 @@
   text-transform: uppercase;
   font-weight: $font-light;
   color: var(--color-tertiary);
+  transition: all .2s;
 
   &--active {
     color: var(--color-secondary);

@@ -1,3 +1,5 @@
 import './styles/app.scss';
 
-console.log('Hello World!');
+import Header from './scripts/header';
+
+Header();
