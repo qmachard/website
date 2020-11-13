@@ -7,19 +7,20 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100vh + 200px);
+  height: 100vh;
   align-items: center;
   justify-content: center;
   background: var(--color-bg-primary);
   color: var(--color-default-inverted);
-  animation: 2s 1.5s screwUp forwards;
 }
 
 .banner_inner {
   text-align: center;
   text-transform: uppercase;
   font-weight: $font-light;
-  margin-top: -200px;
+  margin-top: 0;
+
+  animation: 2s 1.5s screwUp forwards;
 
   strong {
     font-weight: $font-bold;

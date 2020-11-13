@@ -4,8 +4,8 @@
 }
 
 @keyframes screwUp {
-  0% { height: calc(100vh + 200px) }
-  100% { height: calc(60vh + 200px) }
+  0% { margin-top: 0; }
+  100% { margin-top: -200px; }
 }
 
 @keyframes moveUp {
