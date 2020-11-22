@@ -8,7 +8,6 @@
   background: var(--color-bg-default);
   animation: 2s 1.5s moveUp forwards;
   z-index: 2;
-  overflow: hidden;
 }
 
 .main_sticky {
@@ -30,6 +29,10 @@
     font-size: 15px;
     font-weight: $font-light;
   }
+}
+
+.main_inner {
+  overflow: hidden;
 }
 
 .main_section {
