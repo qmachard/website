@@ -95,8 +95,10 @@
 }
 
 .project_content {
+  position: relative;
   max-width: 480px;
   margin: 0 auto;
+  z-index: 1;
 
   @include tablet-landscape {
     width: 50%;
