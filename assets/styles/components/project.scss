@@ -24,12 +24,46 @@
 }
 
 .project_illustration {
+  position: relative;
   margin-bottom: 30px;
   text-align: center;
 
   margin-left: -15px;
   margin-right: -15px;
   width: calc(100% + 30px);
+
+  svg {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+  }
+
+  img {
+    position: relative;
+  }
+
+  .project--mamzelle-patine & {
+    svg {
+      fill: $color-project-mamzelle-patine;
+    }
+  }
+
+  .project--paddix & {
+    svg {
+      transform: scale(1.2) rotate(180deg);
+      fill: $color-project-paddix;
+    }
+  }
+
+  .project--atomic-design & {
+    svg {
+      transform: scale(1.2) rotate(40deg);
+      fill: $color-project-atomic-design;
+    }
+  }
 
   @include tablet-landscape {
     margin-right: 0;
@@ -83,7 +117,7 @@
     max-height: 25px;
   }
 
-  &--mamzelle-patine {
+  .project--mamzelle-patine & {
     img {
       max-height: 40px;
     }
@@ -96,9 +130,9 @@
       max-height: none;
     }
 
-    &--mamzelle-patine {
+    .project--mamzelle-patine & {
       img {
-        height: 55px;
+        max-height: 55px;
       }
     }
   }
