@@ -22,12 +22,16 @@
 }
 
 .main_footer {
-  padding-bottom: 50px;
+  padding: 50px 0;
   text-align: center;
 
   .paragraph {
     font-size: 15px;
     font-weight: $font-light;
+  }
+
+  .love {
+    color: var(--color-primary);
   }
 }
 
