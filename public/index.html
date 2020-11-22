@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quentin Machard // Développeur Web Freelance</title>
     <link rel="stylesheet" href="/build/app.css">
@@ -77,22 +77,22 @@
 
         <h1 class="title-1">Mes <b>Services</b></h1>
 
-        <div class="container container--small">
-            <div class="services_row">
-                <div class="services_image">
+        <div class="container">
+            <div class="service">
+                <div class="service_illustration">
                     <img src="/images/code.svg" alt="" />
                 </div>
-                <div class="services_text">
+                <div class="service_content">
                     <h2 class="title-2">Développements Web <strong>Front-End&nbsp;/&nbsp;Back-End</strong></h2>
                     <p class="paragraph">Développements de vos applications et services en React JS ou de vos API et back-offices en Symfony 5.</p>
                 </div>
             </div>
 
-            <div class="services_row">
-                <div class="services_image">
+            <div class="service">
+                <div class="service_illustration">
                     <img src="/images/accessibility.svg" alt="" />
                 </div>
-                <div class="services_text">
+                <div class="service_content">
                     <h2 class="title-2">Conseils en <strong>Accessibilité Web</strong></h2>
                     <p class="paragraph">Aujourd’hui, plus que jamais, il est important de penser nos services afin qu’ils soient à la portée de tous, sur tous les appareils et dans toutes les situations.</p>
                 </div>
@@ -100,7 +100,7 @@
         </div>
     </section>
 
-    <section class="main_section references">
+    <div class="main_section references">
         <div class="anchor" id="references"></div>
         <svg class="main_wave">
             <path d="M0 67 C 273,183 822,-40 1920.00,106 V 359 H 0 V 67 Z">
@@ -112,7 +112,56 @@
             </path>
         </svg>
 
-        <div class="container">
+        <section class="container projects">
+            <h1 class="title-1">Mes <b>projets et références</b></h1>
+
+            <article class="project">
+                <div class="project_illustration">
+                    <img src="/images/illustration-paddix.png" alt="">
+                </div>
+
+                <div class="project_content">
+                    <h2 class="title-2">Développement d'une <br><b>API de Gestion de Contenus</b></h2>
+                    <p class="project_logo"><img src="/images/logo-paddix-femininbio.svg" alt="PADDIX x fémininbio"></p>
+                    <p class="paragraph">Conception et développement d’une <strong>API RESTful</strong> modulable sur <strong>Symfony 5</strong> / <strong>PostgreSQL</strong>.</p>
+                    <p class="paragraph">Mise en place d’un environnement de développement <strong>Docker</strong> et <strong>Gitlab CI</strong>.</p>
+                    <p class="paragraph">Prise de <strong>décisions techniques</strong> et fonctionnelles en équipe.</p>
+                    <p class="paragraph">Participation au développements <strong>Front-End</strong> en <strong>VueJS</strong>.</p>
+                </div>
+            </article>
+
+            <article class="project">
+                <div class="project_illustration">
+                    <img src="/images/illustration-mamzelle-patine.png" alt="">
+                </div>
+
+                <div class="project_content">
+                    <h2 class="title-2">Création d’une<br> <b>Identité Numérique</b></h2>
+                    <p class="project_logo project_logo--mamzelle-patine"><img src="/images/logo-mamzellepatine.svg" alt="Mamz'elle Patine"></p>
+                    <p class="paragraph">Création d’un <strong>Design Branding</strong> : Logo, couleurs, typographies.</p>
+                    <p class="paragraph">Design et développement d’un site vitrine <strong>Wordpress</strong>.</p>
+                    <p class="paragraph">Mise en place d’un site e-commerce sur <strong>Prestashop</strong>.</p>
+                    <p class="paragraph">Remontée automatique des produits sur <strong>Facebook Shop</strong> et <strong>Instagram Boutique</strong>.</p>
+
+                </div>
+            </article>
+
+            <article class="project">
+                <div class="project_illustration">
+                    <img src="/images/illustration-atomic-design-bundle.png" alt="">
+                </div>
+
+                <div class="project_content">
+                    <h2 class="title-2">Développement d’un<br> <b>Outil de développement Open-Source</b></h2>
+                    <p class="project_logo"><img src="/images/logo-atomic-design.svg" alt="Atomic Design"></p>
+                    <p class="paragraph">Conférence sur le «&nbsp;Pattern Atomic Design et comment l’appliquer dans un projet PHP&nbsp;» dans le cadre d'un Meetup de l’<abbr title="Association Française des Utilisateurs de PHP">AFUP</abbr>.</p>
+                    <p class="paragraph">Développement d’un <strong>Bundle Open-Source</strong> permettant de facilité l’utilisation du pattern sur un projet <strong>Symfony 4/5</strong>.</p>
+                    <p class="paragraph"><a href="https://github.com/qmachard/atomic-design-bundle" target="_blank" title="Disponible sur Github (nouvelle fenêtre)">Disponible sur Github</a></p>
+                </div>
+            </article>
+        </section>
+
+        <section class="container">
             <h1 class="title-1">Ils me font <b>confiance</b></h1>
 
             <ul class="references_list">
@@ -120,10 +169,10 @@
                 <li class="references_item"><img src="/images/logo-placemeet.svg" alt="Placemeet" /></li>
                 <li class="references_item"><img src="/images/logo-mamzellepatine.svg" alt="Mamzelle Patine" /></li>
             </ul>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <section class="main_section main_section--secondary main_section--small-padding contact">
+    <div class="main_section main_section--secondary main_section--small-padding contact">
         <div class="anchor" id="contact"></div>
         <svg class="main_wave">
             <path d="M0 67 C 273,183 822,-40 1920.00,106 V 359 H 0 V 67 Z">
@@ -135,7 +184,7 @@
             </path>
         </svg>
 
-        <div class="container">
+        <section class="container">
             <h1 class="title-1">Me <b>contacter</b></h1>
 
             <ul class="contact_list">
@@ -157,6 +206,9 @@
                 </li>
             </ul>
 
+        </section>
+
+        <section class="container">
             <h1 class="title-1">Mes <b>liens</b></h1>
 
             <ul class="contact_list">
@@ -173,8 +225,8 @@
                     <a class="contact_item_link title-4" target="_blank" href="https://twitter.com/accessibilitips" title="Accessibili'Tips (Nouvelle Fenêtre)">Accessibili'Tips</a>
                 </li>
             </ul>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer class="main_footer">
         <div class="container">

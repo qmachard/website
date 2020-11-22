@@ -8,6 +8,7 @@
   background: var(--color-bg-default);
   animation: 2s 1.5s moveUp forwards;
   z-index: 2;
+  overflow: hidden;
 }
 
 .main_sticky {

@@ -37,3 +37,9 @@
     @content;
   }
 }
+
+@mixin tablet-landscape {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}

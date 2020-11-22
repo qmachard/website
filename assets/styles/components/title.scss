@@ -19,6 +19,7 @@
 
 .title-2 {
   font-size: 24px;
+  line-height: 1.2;
   font-weight: $font-light;
   color: var(--color-secondary);
 
@@ -69,6 +70,14 @@
 
   strong {
     font-weight: $font-bold;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   @include desktop {
