@@ -113,6 +113,7 @@
 
 
 .project_logo {
+  display: inline-block;
   margin: 20px 0;
 
   img {
@@ -122,6 +123,27 @@
   .project--mamzelle-patine & {
     img {
       max-height: 40px;
+    }
+  }
+
+  @include dark-mode {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    padding: 10px;
+
+    img {
+      filter: brightness(100);
+    }
+
+    .project--mamzelle-patine & {
+      background: $color-project-mamzelle-patine;
+    }
+
+    .project--paddix & {
+      background: $color-project-paddix;
+    }
+
+    .project--atomic-design & {
+      background: $color-project-atomic-design;
     }
   }
 

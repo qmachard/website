@@ -12,6 +12,17 @@
   --color-bg-default: #{$color-bg-default};
   --color-bg-primary: #{$color-primary};
   --color-bg-secondary: #{$color-bg-secondary};
+
+  @include dark-mode {
+    --color-default: #{$color-default-dark};
+    --color-default-inverted: #{$color-default-dark};
+    --color-primary: #{$color-primary};
+    --color-secondary: #{$color-secondary-dark};
+    --color-tertiary: #{$color-tertiary-dark};
+    --color-bg-default: #{$color-bg-default-dark};
+    --color-bg-primary: #{$color-primary};
+    --color-bg-secondary: #{$color-bg-secondary-dark};
+  }
 }
 
 html {
@@ -23,6 +34,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   background: var(--color-bg-default);
+  color: var(--color-default);
 
   animation: hide-scroll 3s backwards;
 }
