@@ -1,13 +1,16 @@
 {
   "devDependencies": {
-    "@symfony/webpack-encore": "^0.31.0",
-    "node-sass": "^4.0.0",
-    "sass-loader": "^9.0.1",
+    "@symfony/webpack-encore": "^1.7.0",
+    "node-sass": "^7.0.0",
+    "sass-loader": "^12.4.0",
     "webpack-notifier": "^1.6.0"
   },
   "scripts": {
-    "start": "encore dev-server --disable-host-check --host 0.0.0.0",
+    "start": "encore dev-server --host 0.0.0.0",
     "dev": "encore dev",
     "build": "encore production"
+  },
+  "dependencies": {
+    "file-loader": "^6.2.0"
   }
 }

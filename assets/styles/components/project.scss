@@ -65,6 +65,13 @@
     }
   }
 
+  .project--backpack & {
+    svg {
+      transform: scale(1.1) rotate(0deg);
+      fill: $color-project-backpack;
+    }
+  }
+
   @include tablet-landscape {
     margin-right: 0;
     margin-left: -80px;
@@ -145,6 +152,10 @@
     .project--atomic-design & {
       background: $color-project-atomic-design;
     }
+
+    .project--backpack & {
+      background: $color-project-backpack;
+    }
   }
 
   @include tablet-landscape {
@@ -155,6 +166,12 @@
     }
 
     .project--mamzelle-patine & {
+      img {
+        max-height: 55px;
+      }
+    }
+
+    .project--backpack & {
       img {
         max-height: 55px;
       }
